@@ -28,12 +28,12 @@
 _关于Header的基本防爬_
 
 我们这边使用的是通过获取到浏览器的Header来替换我们请求我们的网页，可以在spider里面见到这一项操作；
-'<headers = {
+`<headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
 }
     author = Author()
     author_id = url.split("/")[-1]
-    res_text = requests.get(url,headers=headers).text>'
+    res_text = requests.get(url,headers=headers).text>`
     
   _这时候我们就可以看到我们又能访问到页面的内容了_
   
